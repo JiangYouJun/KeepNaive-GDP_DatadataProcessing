@@ -13,32 +13,47 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="资源文件\生成文件">
+      <UniqueIdentifier>{da38df25-eceb-4139-84e6-ea14eec84fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\导入文件">
+      <UniqueIdentifier>{1d525bd6-4544-4d93-bf2a-8158ad839e7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="code\file_reader.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="code\main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="code\old.cpp">
+    <Text Include="source\source.txt">
+      <Filter>资源文件\导入文件</Filter>
+    </Text>
+    <Text Include="source\location.txt">
+      <Filter>资源文件\导入文件</Filter>
+    </Text>
+    <Text Include="output\output.txt">
+      <Filter>资源文件\生成文件</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\源.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="code\file_reader.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="code\main.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="source\location.data">
-      <Filter>资源文件</Filter>
+    <None Include="output\parameter1.data">
+      <Filter>资源文件\生成文件</Filter>
     </None>
-    <None Include="source\source.data">
-      <Filter>资源文件</Filter>
+    <None Include="output\parameter2.data">
+      <Filter>资源文件\生成文件</Filter>
+    </None>
+    <None Include="output\piecewise_functions1.data">
+      <Filter>资源文件\生成文件</Filter>
+    </None>
+    <None Include="output\piecewise_functions2.data">
+      <Filter>资源文件\生成文件</Filter>
+    </None>
+    <None Include="output\primitive.data">
+      <Filter>资源文件\生成文件</Filter>
+    </None>
+    <None Include="output\debug.loggg">
+      <Filter>资源文件\生成文件</Filter>
     </None>
   </ItemGroup>
 </Project>

@@ -18,6 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="output\output.txt" />
+    <Text Include="source\location.txt" />
+    <Text Include="source\source.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\源.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="output\debug.loggg" />
+    <None Include="output\parameter1.data" />
+    <None Include="output\parameter2.data" />
+    <None Include="output\piecewise_functions1.data" />
+    <None Include="output\piecewise_functions2.data" />
+    <None Include="output\primitive.data" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -88,11 +104,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -138,19 +158,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="code\file_reader.cpp" />
-    <ClCompile Include="code\main.cpp" />
-    <ClCompile Include="code\old.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="code\file_reader.h" />
-    <ClInclude Include="code\main.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="source\location.data" />
-    <None Include="source\source.data" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
